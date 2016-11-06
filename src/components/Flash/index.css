@@ -1,0 +1,23 @@
+#flash {
+  position: fixed;
+  background: #e74c3c;
+  top: 42px;
+  width: 100%;
+  padding: 0.5em 1em;
+  justify-content: space-between;
+  display: flex;
+  color: white;
+}
+
+#close {
+  position: absolute;
+  right: 1em;
+  color: white;
+  text-decoration: none;
+  padding: 0 2em;
+}
+
+#close:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
