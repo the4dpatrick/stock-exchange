@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5em 1em;
+  border: 1px solid #dedede;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  z-index: 999;
+}
+
+.nav a {
+  font-family: 'Bungee', cursive;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  text-decoration: none;
+  color: #27ae60;
+
+  /* Space between search and name */
+  margin-right: 1em;
+}
+
+.nav a:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
