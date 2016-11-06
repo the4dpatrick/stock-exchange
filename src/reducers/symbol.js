@@ -46,7 +46,7 @@ const mockData = {
   "ethTime": 1478303644000
 }
 
-const initialState = process.env.NODE_ENV === 'development' ? mockData : {};
+const initialState = mockData;
 
 export default function portfolio(state = initialState, action) {
   switch (action.type) {

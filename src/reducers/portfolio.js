@@ -15,7 +15,7 @@ const mockStockData = [
 
 const initialState = {
   cash: 100000,
-  stocks: process.env.NODE_ENV === 'development' ? mockStockData : []
+  stocks: mockStockData
 }
 
 export default function portfolio(state = initialState, action) {
