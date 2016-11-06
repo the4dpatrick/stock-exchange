@@ -5,10 +5,10 @@ import {
   CLEAR_ERROR
 } from '../constants';
 
-const initialState = "";
+const initialState = "App is using MockData because API has a CORS issue";
 
 export default function portfolio(state = initialState, action) {
-  switch (action.type) {    
+  switch (action.type) {
     case LOOKUP_SYMBOL_ERROR:
     case BUY_STOCK_ERROR:
     case SELL_STOCK_ERROR:
