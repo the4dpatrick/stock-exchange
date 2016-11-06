@@ -1,0 +1,32 @@
+.bid-ask-table {
+  margin-bottom: 1em;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid #dedede;
+}
+
+.bid-ask-table-header {
+  display: flex;
+  justify-content: space-around;
+  background: #1abc9c;
+}
+
+.bid-ask-table-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bid-ask-table-header-cell {
+  color: white;
+  padding: 0.5em 0;
+}
+
+.bid-ask-table-row-cell {
+  flex: 1;
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+.bid-ask-table-row-cell:nth-of-type(1) {
+  border-right: 1px solid #dedede;
+}
