@@ -1,0 +1,11 @@
+.portfolio-list-container {
+  flex: 1;
+}
+
+.portfolio-list-container-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
