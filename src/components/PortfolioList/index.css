@@ -1,0 +1,56 @@
+.portfolio-list {
+  margin: 0 0 40px 0;
+  width: 100%;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  display: table;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 580px) {
+  .portfolio-list {
+    display: block;
+  }
+}
+
+
+.row {
+  display: table-row;
+  text-decoration: none;
+  color: initial;
+}
+
+.row:not(.header):hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.row:nth-of-type(odd) {
+  background: #FAFBFD;
+}
+.row.header {
+  color: #ffffff;
+  background: #2ecc71;
+}
+
+.row.header .cell {
+  padding: 0.5em 1em
+}
+
+@media screen and (max-width: 580px) {
+  .row {
+    padding: 8px 0;
+    display: block;
+  }
+}
+
+.cell {
+  padding: 6px 12px;
+  display: table-cell;
+}
+@media screen and (max-width: 580px) {
+  .cell {
+    padding: 2px 12px;
+    display: block;
+  }
+}
