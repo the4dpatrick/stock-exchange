@@ -5,7 +5,7 @@ class SearchBar extends Component {
   search(e) {
     if (e.key === 'Enter') {
       this.props.search(e.nativeEvent.target.value);
-    }    
+    }
   }
   render() {
     return (

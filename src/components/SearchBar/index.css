@@ -1,0 +1,13 @@
+#search-bar input {
+  padding: 0.5em;
+  width: 10vw;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #dedede;
+  text-transform: uppercase;
+  transition: all 1s ease-in-out;
+}
+
+#search-bar input:focus {
+  width: 15vw;
+}
