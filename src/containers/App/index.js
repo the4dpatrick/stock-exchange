@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
 import Nav from '../../components/Nav';
+import Flash from '../FlashContainer';
 
 class App extends Component {
   render() {
@@ -8,8 +9,9 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Nav />        
-        <div>
+        <Nav />
+        <Flash />
+        <div className="content">
           {children}
         </div>
       </div>
