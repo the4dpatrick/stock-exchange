@@ -9,3 +9,5 @@ export const BUY_STOCK_ERROR = "BUY_STOCK_ERROR";
 export const SELL_STOCK = "SELL_STOCK";
 export const SELL_STOCK_SUCCESS = "SELL_STOCK_SUCCESS";
 export const SELL_STOCK_ERROR = "SELL_STOCK_ERROR";
+
+export const CLEAR_ERROR = "CLEAR_ERROR";
