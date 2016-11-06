@@ -4,13 +4,19 @@ import {
   LOOKUP_SYMBOL_ERROR,
 } from '../constants';
 import { requestSymbol } from '../utils';
+import { push } from 'react-router-redux';
 
 export function lookupSymbol(symbol) {
   return dispatch => {
     dispatch({ type: LOOKUP_SYMBOL });
     requestSymbol(symbol)
-      .then(lookupSymbolSuccess)
+      .then(symbol => {
+        lookupSymbolSuccess(symbol);
+        dispatch(push(`/symbol/${symbol}`));
+      })
       .catch(lookupSymbolError)
+
+
   }
 }
 
@@ -21,8 +27,9 @@ function lookupSymbolSuccess(symbol) {
   }
 }
 
-function lookupSymbolError() {
+function lookupSymbolError(err) {
   return {
-    type: LOOKUP_SYMBOL_ERROR
+    type: LOOKUP_SYMBOL_ERROR,
+    payload: err
   }
 }
