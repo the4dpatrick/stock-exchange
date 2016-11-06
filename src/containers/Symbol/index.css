@@ -1,0 +1,9 @@
+.symbol-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.symbol-content #trader {
+  margin-top: 2.5em;
+}
