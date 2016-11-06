@@ -4,7 +4,9 @@
   "private": true,
   "homepage": "http://the4dpatrick.github.io/stock-exchange",
   "devDependencies": {
+    "enzyme": "^2.5.1",
     "gh-pages": "^0.11.0",
+    "react-addons-test-utils": "^15.3.2",
     "react-scripts": "0.7.0"
   },
   "dependencies": {
