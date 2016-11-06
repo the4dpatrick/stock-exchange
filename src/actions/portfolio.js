@@ -44,6 +44,8 @@ export function buyStock(symbol, name, buyQuantity, bidPrice) {
         }
       ];
     }
+    localStorage.setItem('cash', JSON.stringify(newCash));
+    localStorage.setItem('stocks', JSON.stringify(newStocks));
     dispatch(buyStockSuccess(newCash, newStocks))
   }
 }
@@ -81,6 +83,8 @@ export function sellStock(symbol, sellQuantity, askPrice) {
       newStocks = currentStocks.filter(s => s.symbol === symbol);
     }
 
+    localStorage.setItem('cash', JSON.stringify(newCash));
+    localStorage.setItem('stocks', JSON.stringify(newStocks));
     dispatch(sellStockSuccess(newCash, newStocks));
   }
 }

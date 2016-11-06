@@ -7,6 +7,9 @@ import {
   SELL_STOCK_ERROR,
 } from '../constants';
 
+const cash = JSON.parse(localStorage.getItem('cash'));
+const stocks = JSON.parse(localStorage.getItem('stocks'));
+
 const mockStockData = [
   { symbol: 'F', name: 'Ford Motor', quantity: 20, pricePaid: [14.99] },
   { symbol: 'GE', name: 'General Electric', quantity: 10, pricePaid: [20] },
@@ -14,8 +17,8 @@ const mockStockData = [
 ];
 
 const initialState = {
-  cash: 100000,
-  stocks: mockStockData
+  cash: cash || 100000,
+  stocks: stocks || mockStockData
 }
 
 export default function portfolio(state = initialState, action) {
