@@ -16,3 +16,13 @@ export function requestSymbol(symbol) {
       .catch(reject)
   });
 }
+
+/*eslint no-cond-assign: "off"*/
+export function moneyFormat(price, sign='$') {
+  const pieces = parseFloat(price).toFixed(2).split('');
+  let ii = pieces.length - 3;
+  while ((ii-=3) > 0) {
+    pieces.splice(ii, 0, ',');
+  }
+  return sign + pieces.join('');
+}
